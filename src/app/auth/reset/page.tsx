@@ -1,5 +1,4 @@
 "use client";
-import Google from "@/components/CustomIcons/Google";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import {
   Box,
@@ -7,12 +6,10 @@ import {
   IconButton,
   InputAdornment,
   OutlinedInput,
-  SvgIcon,
   TextField,
 } from "@mui/material";
 import Link from "next/link";
 import React, { useState } from "react";
-import { FcGoogle } from "react-icons/fc";
 
 export default function ResetPage() {
   const [verificationCode, setVerificationCode] = useState("");
@@ -23,7 +20,9 @@ export default function ResetPage() {
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    console.log("submit");
+  };
 
   return (
     <Box

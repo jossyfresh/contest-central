@@ -1,23 +1,13 @@
 "use client";
-import Google from "@/components/CustomIcons/Google";
-import { Visibility, VisibilityOff } from "@mui/icons-material";
-import {
-  Box,
-  Button,
-  IconButton,
-  InputAdornment,
-  OutlinedInput,
-  SvgIcon,
-  TextField,
-} from "@mui/material";
-import Link from "next/link";
+import { Box, Button, TextField } from "@mui/material";
 import React from "react";
-import { FcGoogle } from "react-icons/fc";
 
 export default function ForgotPasswordPage() {
   const [email, setEmail] = React.useState("");
 
-  const handleSubmit = () => {};
+  const handleSubmit = () => {
+    console.log(email);
+  };
   return (
     <Box
       sx={{

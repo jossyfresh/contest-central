@@ -9,6 +9,14 @@ import {
   Paper,
 } from "@mui/material";
 
+interface Data {
+  name: string;
+  attendance: string;
+  avgConversionRate: number;
+  avgTimeSpent: number;
+  overallScore: number;
+}
+
 // Assuming the createData and rows are defined as in the previous examples
 function createData(
   name: string,

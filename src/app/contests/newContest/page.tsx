@@ -1,28 +1,12 @@
 "use client";
 import * as React from "react";
 import Box from "@mui/material/Box";
-import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import Chip from "@mui/material/Chip";
 import TextField from "@mui/material/TextField"; // Import TextField
 import { Button } from "@mui/material";
 import { useState } from "react";
-import Image from "next/image";
-import DeleteIcon from "@mui/icons-material/Delete";
-import { NewContestStatus } from "@/components/Contest/NewContestStatus";
-
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
-  Paper,
-} from "@mui/material";
-import { useCheckDuplicateQuery } from "@/store/services/questionApi";
 import SingleQuestionAdd from "@/components/Contest/SingleQuestionAdd";
 
 interface ChipData {
